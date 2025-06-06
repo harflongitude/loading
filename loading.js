@@ -30,9 +30,11 @@ btnSubmit.addEventListener('click', function(){
         if (progress >= 100) {
             progress = 100; 
             clearInterval(loadingInterval);  
-            if(nilai.value){
+            if(nilai.value == 100){
+                template.textContent = '😁❤️👍😂😂😂😁 Gelo 100 fix ipk 4 lek'
+            } else if(nilai.value){
                 template.textContent = 'Angka yang kamu pikirin adalah ' + nilai.value
-            } else{
+            } else {
                 template.textContent= 'Pikiranmu lagi kosong'
             }
         }
